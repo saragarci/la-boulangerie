@@ -1,0 +1,361 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: 700;
+}
+
+/* Header */
+
+.App-header {
+  width: 70%;
+  margin: 5em 0 0;
+  padding: 2em;
+  color: black;
+  border-bottom: 5px solid #fd9f15;
+  text-align: center;
+}
+
+.App-title {
+  font-weight: 100;
+  font-size: 47px;
+}
+
+.App-title:hover {
+  font-weight: 100;
+}
+
+/* Body */
+
+.App-body {
+  width: 70%;
+  margin: auto;
+  margin: 3em 0;
+}
+
+.Section-title {
+  font-size: 20pt;
+  font-weight: 100;
+  color: black;
+  width: 210px;
+}
+
+/* Home */
+
+.App-home {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 20px;
+  text-align: center;
+}
+
+.App-home-item {
+  margin: 15px 0;
+}
+
+/* Cake catalog */
+
+.Cake-catalog {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* Order Cake */
+
+.Create-order {
+  font-weight: 100;
+}
+
+.Order-cake-button {
+  border: none;
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fd9f15;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Order-cake-button:hover {
+  font-weight: 700;
+}
+
+.Order-cake-button-disabled {
+  border: none;
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: #fd9f15;
+  font-size: 16px;
+  outline: none;
+}
+
+.Order-cake-button-disabled > span {
+  visibility: hidden;
+  width: 120px;
+  background-color: #ddd;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  margin-left: -100px;
+  margin-top: 20px;
+}
+
+.Order-cake-button-disabled:hover > span {
+  visibility: visible;
+}
+
+/* Cake */
+
+.Cakes-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 3em;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  align-items: baseline;
+  font-weight: 100;
+}
+
+.Cakes-list > li {
+  width: 30%;
+  min-height: 20%;
+  padding: 0 10px;
+}
+
+.Cake-list-null {
+  margin: 2em 0 0;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.Cake {
+  margin: 2em 0 0;
+  flex: 0 0 30%;
+  font-size: 12pt;
+}
+
+.Cake-image {
+  width: 100%;
+}
+
+.Cake-name {
+  padding-top: 1em;
+  width: 100%;
+}
+
+.Cake-price {
+  color: #999;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.Add-cake {
+  font-size: 12pt;
+  margin: auto;
+  color: #fd9f15;
+  font-weight: 400;
+}
+
+/* Order */
+
+.Show-Orders {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.Orders-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 3em;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  align-items: baseline;
+  font-weight: 100;
+}
+
+.Orders-list-null {
+  margin: 2em 0 0;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.Order {
+  margin: 2em 0 0;
+  flex: 0 0 30%;
+  font-size: 12pt;
+  border: solid 1px #e9e9e9;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+}
+
+.Order-id {
+  padding: 5px 0;
+  font-weight: 700;
+}
+
+.Order-cakeName {
+  padding: 5px 0;
+}
+
+.Order-price {
+  padding: 5px 0;
+}
+
+.Order-status {
+  padding: 5px 0;
+  color: #999;
+}
+
+.Order-complete-step-button {
+  padding: 5px 0; 
+  border: none;
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fd9f15;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Order-complete-step-button:hover {
+  font-weight: 700;
+}
+
+.Create-order {
+  font-size: 12pt;
+  margin: auto;
+  color: #fd9f15;
+  font-weight: 400;
+  align-self: center;
+}
+
+/* Submitted */
+
+.Submitted {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.Submitted-item {
+  margin: 15px 0 0;
+}
+
+.Back-home {
+  color: #fd9f15;
+}
+
+/* Form */
+
+.Form-items {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em auto;
+}
+
+.Form-item {
+  font-size: 16px;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.Form-item > input {
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0;
+  padding: 0 10px 0;
+  font-weight: 100;
+  color: #000d0f;
+  font-size: 16px;
+  border: solid 1px #e9e9e9;
+  outline: none;
+  height: 30px;
+}
+
+.Form-item-error {
+  color: #b53737;
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+.Form-item-submit {
+  border: none;
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #000d0f;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Form-item-submit:hover {
+  font-weight: 700;
+}
+
+/* Footer */
+
+.App-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 3em auto;
+  text-align: center;
+  font-size: 11pt;
+  border-top: 1px solid #ddd;
+  max-width: 25em;
+  padding: 2em;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 2200px) {
+  .App {
+    width: 2200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
