@@ -3,6 +3,10 @@
 This application implements an Ethereumm DApp supply chain that replicates a marketplace functionality, where companies and customers are allowed to sell and buy respectively. In particular, La Boulangerie targets selling and buying cakes, and gives the user the possibility to follow up on the order status (`created`, `ongoing`, `readyForPickup` and `delivered`). The smart contract is implemented in Solidity.
 The client side is build using the React framework and gives companies and sellers access to all the [existing functionality](#application-functionality).
 
+The smart contract has been deployed into the Rinkeby Test Network and can be used at https://laboulangerie.saragarci.com/.
+
+Truffle, Infura and MetaMask were used for the deployment.
+
 ## Usage
 
 ### Dependencies
